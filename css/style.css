@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: lavender;
 }
@@ -7,5 +14,54 @@ body {
 .heading {
     text-align:center;
     font-family: 'Indie Flower', cursive;
+    position: relative;
+    top: -200px;
+    animation: darkred 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes darkred {
+    100% {top: 0;}
 }
 
+ #pink {
+   width: 100px;
+   height: 100px;
+   border: 1px solid white;
+   border-radius: 50%;
+   margin: 0 auto;
+  
+ }
+
+ #pink {
+background-color: pink;
+position: relative;
+top: -300px;
+animation: pink 2s ease-in-out forwards;
+animation-iteration-count: infinite;
+
+ }
+@keyframes pink {
+    100% {top: 0;}
+}
+
+
+#blue {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+   
+  }
+ 
+  #blue {
+ background-color: blue ;
+ top: -300px;
+ animation: blue 5s ease-in-out;
+ opacity: 0;
+ animation-iteration-count: infinite;
+ 
+  }
+ @keyframes blue {
+     100% {opacity: 1;}
+ }
+ 
